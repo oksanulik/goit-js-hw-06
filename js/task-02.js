@@ -13,9 +13,5 @@ const ingredientsMarkup = ingredients.map((ingredient) => {
   const ingredientEl = document.createElement("li");
   ingredientEl.classList.add("item");
   ingredientEl.textContent = ingredient;
-  return ingredientEl;
-});
-
-ingredientsMarkup.forEach((ingredientEl) => {
   listEl.append(ingredientEl);
 });
