@@ -14,4 +14,7 @@ const ingredientsMarkup = ingredients.map((ingredient) => {
   ingredientEl.classList.add("item");
   ingredientEl.textContent = ingredient;
   listEl.append(ingredientEl);
+  return ingredientEl;
 });
+
+listEl.append(...ingredientsMarkup);
